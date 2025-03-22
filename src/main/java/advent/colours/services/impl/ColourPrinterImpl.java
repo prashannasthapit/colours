@@ -1,10 +1,15 @@
 package advent.colours.services.impl;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
 import advent.colours.services.BluePrinter;
 import advent.colours.services.ColourPrinter;
 import advent.colours.services.GreenPrinter;
 import advent.colours.services.RedPrinter;
 
+@Primary
+@Component
 public class ColourPrinterImpl implements ColourPrinter {
 
     private RedPrinter redPrinter;
